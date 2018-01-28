@@ -28,7 +28,9 @@
     nsdcard_posix
     substratum_service
     theme_data_file
-    theme_prop))
+    theme_prop
+    sdcard_posix
+    adb_device))
 
 ;; private_objects - a collection of types that were labeled differently in
 ;;     older policy, but that should not remain accessible to vendor policy.
