@@ -180,7 +180,8 @@
 /system/bin/mke2fs		u:object_r:e2fs_exec:s0
 /system/bin/e2fsck	--	u:object_r:fsck_exec:s0
 /system/bin/fsck\.f2fs	--	u:object_r:fsck_exec:s0
-/system/bin/make_f2fs	--	u:object_r:fsck_exec:s0
+/system/bin/sload_f2fs	--	u:object_r:e2fs_exec:s0
+/system/bin/make_f2fs	--	u:object_r:e2fs_exec:s0
 /system/bin/fsck_msdos	--	u:object_r:fsck_exec:s0
 /system/bin/tune2fs	--	u:object_r:fsck_exec:s0
 /system/bin/toolbox	--	u:object_r:toolbox_exec:s0
@@ -400,6 +401,9 @@
 
 # Bootchart data
 /data/bootchart(/.*)?		u:object_r:bootchart_data_file:s0
+
+# Themes data
+/data/system/theme(/.*)?    u:object_r:theme_data_file:s0
 
 #############################
 # Expanded data files

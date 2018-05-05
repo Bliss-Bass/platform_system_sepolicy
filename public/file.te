@@ -64,6 +64,7 @@ type shm, fs_type;
 type mqueue, fs_type;
 type fuse, sdcard_type, fs_type, mlstrustedobject;
 type sdcardfs, sdcard_type, fs_type, mlstrustedobject;
+type sdcard_posix, sdcard_type, fs_type, mlstrustedobject;
 type vfat, sdcard_type, fs_type, mlstrustedobject;
 type debugfs, fs_type, debugfs_type;
 type debugfs_mmc, fs_type, debugfs_type;
@@ -345,3 +346,6 @@ with_asan(`type asanwrapper_exec, exec_type, file_type;')
 # Should be:
 #   type apk_data_file, file_type, data_file_type;
 neverallow fs_type file_type:filesystem associate;
+
+# Themes
+type theme_data_file, file_type, data_file_type;
