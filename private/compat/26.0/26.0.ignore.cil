@@ -25,6 +25,7 @@
     thermalserviced_tmpfs
     timezone_service
     tombstoned_java_trace_socket
+    nsdcard_posix
     substratum_service
     theme_data_file
     theme_prop))
